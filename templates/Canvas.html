@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/css/Style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='Canvas.js') }}"></script>
+
+</head>
+<body>
+
+    <div class="main-container">
+
+          <a href="/"><span>Return To Guide</span></a>
+
+        <h1 class="title">Handwritten characters prediction</h1>
+        <div id="point">
+          <span id="p1">.</span>
+          <span id="p2">.</span>
+          <span id="p3">.</span>
+          <span id="p4">.</span>
+          <span id="p5">.</span>
+          <span id="p6">.</span>
+          <span id="p7">.</span>
+          
+        </div>
+        <div>
+          <canvas id="canvas" width="1120" height="140"></canvas>
+        </div>
+        <form id="prediction" action="Can" method="POST">
+        <input id="pixels" name="pixels" type="hidden" />
+        <button type="button" class="button is-info" onclick="resetCanvas()">clear</buttson>
+        
+        <button type="button" class="button is-info" onclick="predict()">predict</button>
+      </form>
+      
+      <p id="letter", name="letter">your prediction is: {{ letter }}</p>
+      <script>
+        $(document).ready(function() {
+          startCanvas()
+        })
+      </script>
+    
+
+</body>
+</html>

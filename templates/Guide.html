@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/css/guide.css">
+</head>
+<body>
+    
+    <nav>
+        <h1>Handwritten Characters Recognition Guide</h1>
+        <div class="onglets">
+          <a href="/">Guide</a>
+          <a href="/Can">Test Application </a>
+        </div>
+      </nav>
+    
+    <header>
+        <h1>Description:</h1>
+        <p>this application can predict the digits from 0 to 9 , the uppercase carracters and the lowercase carracters 
+            all u need to do is to draw some carracters on the canvas in the application test page and after that pres the "predict" button and check the result. </p>
+        <h1>Tips to get the best results:</h1>
+    </header>
+
+    <section class="main" id="produits">
+      <div class="content">
+          <div class="card">
+              <div class="left">
+                  <h1 class="h">1:Respecte the spacing betwen letters</h1>
+                  <p>You may notice tha there are some black marks above the canvas pleas try to write between of each two black marks</p>
+              </div>
+              <div class="right">
+                  <img src="/static/images/Screenshot from 2022-03-23 16-09-16.png" alt="">
+              </div>
+          </div>
+
+          <div class="card">
+              <div class="left">
+                  <h1 class="h">2: Uppercase vs Lowercase</h1>
+                  <p> For letters where the only difference in casing is the size like 'c' and 'C', write relatively large for uppercase, and relatively small for lowercase.                </p>
+              </div>
+              <div class="right">
+                  <img src="/static/images/Screenshot from 2022-03-23 16-18-30.png" alt="">
+              </div>
+          </div>
+          <div class="card">
+             <div class="left">
+                <h1 class="h">3:Try not to confuse the model</h1>
+                <p>try to write neatly,althought the model have 86% accuancy it can get confuse by some carracters that looks simmilar like '5' and 'S', 'B' and '8', '1' and 'I' etc... </p>
+             </div>
+             <div class="right">
+                <img src="/static/images/Screenshot from 2022-03-23 16-46-35.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="left">
+                <h1 class="h">4: don' t press the predict button unless you write somthing</h1>
+                <p> if you pressed the predict buttun and the canvas still empty that will produce an eroor in the server so please avoid that                 </p>
+            </div>
+            <div class="right">
+                
+            </div>
+        </div>
+      </div>
+  </section>
+
+
+</body>
+</html>
